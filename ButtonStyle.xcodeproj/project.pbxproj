@@ -14,6 +14,8 @@
 		1DD57BEC297040170093FC7F /* ButtonStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD57BEB297040170093FC7F /* ButtonStyleTests.swift */; };
 		1DD57BF6297040170093FC7F /* ButtonStyleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD57BF5297040170093FC7F /* ButtonStyleUITests.swift */; };
 		1DD57BF8297040170093FC7F /* ButtonStyleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD57BF7297040170093FC7F /* ButtonStyleUITestsLaunchTests.swift */; };
+		1DD57C06297040A90093FC7F /* RoundedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD57C05297040A90093FC7F /* RoundedButtonStyle.swift */; };
+		1DD57C08297040C20093FC7F /* BorderedRoundedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD57C07297040C20093FC7F /* BorderedRoundedButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		1DD57BF1297040170093FC7F /* ButtonStyleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButtonStyleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DD57BF5297040170093FC7F /* ButtonStyleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleUITests.swift; sourceTree = "<group>"; };
 		1DD57BF7297040170093FC7F /* ButtonStyleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1DD57C05297040A90093FC7F /* RoundedButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButtonStyle.swift; sourceTree = "<group>"; };
+		1DD57C07297040C20093FC7F /* BorderedRoundedButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedRoundedButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 		1DD57BD9297040130093FC7F /* ButtonStyle */ = {
 			isa = PBXGroup;
 			children = (
+				1DD57C042970408D0093FC7F /* View */,
 				1DD57BDA297040130093FC7F /* ButtonStyleApp.swift */,
 				1DD57BDC297040130093FC7F /* ContentView.swift */,
 				1DD57BDE297040170093FC7F /* Assets.xcassets */,
@@ -125,6 +130,15 @@
 				1DD57BF7297040170093FC7F /* ButtonStyleUITestsLaunchTests.swift */,
 			);
 			path = ButtonStyleUITests;
+			sourceTree = "<group>";
+		};
+		1DD57C042970408D0093FC7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1DD57C05297040A90093FC7F /* RoundedButtonStyle.swift */,
+				1DD57C07297040C20093FC7F /* BorderedRoundedButtonStyle.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DD57C08297040C20093FC7F /* BorderedRoundedButtonStyle.swift in Sources */,
 				1DD57BDD297040130093FC7F /* ContentView.swift in Sources */,
 				1DD57BDB297040130093FC7F /* ButtonStyleApp.swift in Sources */,
+				1DD57C06297040A90093FC7F /* RoundedButtonStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

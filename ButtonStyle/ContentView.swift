@@ -8,14 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isEnabled: Bool = true
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack(spacing: 40) {
+            HStack {
+                Text("isEnabled")
+                    .padding()
+                
+                Toggle("", isOn: $isEnabled)
+                    .labelsHidden()
+            }
+            
+            Button("Rounded Button") {
+                print("Pressed Rounded Button")
+            }
+            .buttonStyle(RoundedButtonStyle())
+            .disabled(!isEnabled)
+            
+            Button("Bordered Rounded Button") {
+                print("Pressed Borderd Rounded Button")
+            }
+            .buttonStyle(BorderedRoundedButtonStyle())
+            .disabled(!isEnabled)
         }
-        .padding()
     }
 }
 
